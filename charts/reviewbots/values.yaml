@@ -4,7 +4,7 @@
 replicaCount: 1
 notifier:
   slackToken: changeme
-  handleHash: '{"@maratoid": "@U0E20UH2L", "@kmansel": "@U2CJDD5FY", "@jfelten": "@U2G6XUDC5", "@l337ch": "@U0E1XC0F3", "@steve-hetzel": "@U2X0A6ZML", "@NancyHarvey": "@U5Z2E0M32", "mbachtel": "@U6459BD7V"}'
+  handleHash: '{"@maratoid": "@U0E20UH2L", "@kmansel": "@U2CJDD5FY", "@jfelten": "@U2G6XUDC5", "@l337ch": "@U0E1XC0F3", "@steve-hetzel": "@U2X0A6ZML", "@NancyHarvey": "@U5Z2E0M32", "@mbachtel": "@U6459BD7V", "@sncap":"@U6ANYJUFQ"}'
   slackChannels: '["C3V71VD7Y"]'
   image:
     repository: quay.io/samsung_cnct/engineer-notifier
@@ -18,13 +18,13 @@ seal:
   githubToken: changeme
   slackWebhook: changeme
   slackChannel: '#team-zonar'
-  githubMembers: "maratoid,jfelten,kmansel,steve-hetzel,NancyHarvey,l337ch,mbachtel"
-  githubLabels: "[DO NOT MERGE],Don't merge,DO NOT MERGE,wip,[WIP],[NO SEAL],[NO REVIEWBOT]"
+  githubMembers: "maratoid,jfelten,kmansel,steve-hetzel,NancyHarvey,l337ch,mbachtel,sncap"
+  githubTitles: "[DO NOT MERGE],Don't merge,DO NOT MERGE,wip,[WIP],[NO SEAL],[NO REVIEWBOT]"
   orgs:
     - name: ZonarSystems
-      crontab: "0 16 * * *"
+      reminders: "0 16 * * *"
     - name: samsung-cnct
-      crontab: "1 16 * * *"
+      reminders: "1 16 * * *"
 resources:
   limits:
     cpu: 100m

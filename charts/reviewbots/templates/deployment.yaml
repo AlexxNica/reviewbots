@@ -21,8 +21,8 @@ spec:
         configMap:
           name: seal-crontab
           defaultMode: 0644
-      - name: seal-scripts
+      - name: seal-reminders
         configMap:
-          name: seal-scripts
+          name: seal-reminders
           defaultMode: 0755
       

@@ -9,7 +9,7 @@
     name: seal-crontab
     readOnly: true
   - mountPath: /usr/src/app/crontabs
-    name: seal-scripts
+    name: seal-reminders
     readOnly: true
   resources:
 {{ toYaml .Values.resources | indent 10 }}
